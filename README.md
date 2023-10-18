@@ -1,3 +1,3 @@
 # JavaScript-Tutorial
-in this tutorial we cover every topic which are in JavaScript 
+In this tutorial we cover every topic which are in JavaScript <br>
 Author-Bhushan Bisen
