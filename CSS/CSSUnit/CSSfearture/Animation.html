@@ -1,0 +1,26 @@
+<style>
+  #ball {
+    background: red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%; /* Makes the div a circle */
+    animation: bounce 2s infinite; /* Bouncing animation with a duration of 2 seconds, repeating infinitely */
+  }
+  @keyframes bounce {
+    0%,100% {
+      transform:scale(3) rotate(50deg) translateY(0); /* Ball at the ground */
+    }
+    50% {
+      transform: translateY(200px); /* Ball at the peak of the bounce */
+      background: green;
+    }
+    75% {
+      background: yellow;
+    }
+    85%{
+        border: 3px solid blue;
+    }
+  }
+  </style>
+  <div id="ball"></div>
