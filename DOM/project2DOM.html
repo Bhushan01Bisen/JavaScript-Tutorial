@@ -281,17 +281,17 @@ function addChapter(e) {
           //   currInput.className="form-control"
           //   currInput.value=currChapterName;
 
-          //   currElement.parentElement.replaceChild(currInput,currElem ent.previousElementSibling)
+          //   currElement.parentElement.replaceChild(currInput,currElement.previousElementSibling)
           // }
 
           //after done we  want to change clicking
           function editChapter(currElement) {
             if (currElement.textContent=="Done") {
               currElement.textContent="Edit"
-              let currChapterName=currElement.previousElementSibling.value
+              let currChapterName=currElement.previousElementSibling.value;
               let currHeading=document.createElement('h3');
-              currHeading.className="flex-grow-1"
-              currHeading.textContent=currChapterName
+              currHeading.className="flex-grow-1";
+              currHeading.textContent=currChapterName;
               currElement.parentElement.replaceChild(currHeading,currElement.previousElementSibling)
 
              }
@@ -299,17 +299,18 @@ function addChapter(e) {
                
              currElement.textContent="Done"
             // console.log(currElement.previousElementSibling);
-            let currChapterName=currElement.previousElementSibling.textContent
+            let currChapterName=currElement.previousElementSibling.textContent;
             let currInput=document.createElement('input');
-            currInput.type="text"
-            currInput.placeholder="Chapter Name"
-            currInput.className="form-control"
-            currInput.value=currChapterName
+            currInput.type="text";
+            currInput.placeholder="Chapter Name";
+            currInput.className="form-control";
+            currInput.value=currChapterName;
 
-            currElement.parentElement.replaceChild(currInput,currElement.previousElementSibling)
+            currElement.parentElement.replaceChild(currInput,currElement.previousElementSibling);
           }
 
         }
+        
     </script>
 </body>
 </html>
