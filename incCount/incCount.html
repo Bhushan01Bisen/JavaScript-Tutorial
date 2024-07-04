@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Counter</title>
+</head>
+<body>
+<button onclick="{()=>count+1}">inc</button>
+
+<script>
+    // Declare incrementCount before using it in the onclick attribute
+    const incrementCount = (function () {
+        let count = 0;
+        return function () {
+            // count++;
+            // console.log(count);
+        };
+    })();
+</script>
+
+</body>
+</html>
